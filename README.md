@@ -1,6 +1,6 @@
 # MF-LOGP_Development
 
-This repository will hold all relavent scripts and files for the MF-LOGP Algorithm and will work as an extension to the supplementary information for "Developing a Dimensionally Reduced Machine Learning Model for Predicting Single Component Octanol-Water Partition Coefficients"
+This repository holds all relavent scripts and files for the MF-LOGP Algorithm and acts as an extension to the supplementary information for "Developing a Dimensionally Reduced Machine Learning Model for Predicting Single Component Octanol-Water Partition Coefficients"
 
 Within the repository you'll find:
   File:
