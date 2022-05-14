@@ -48,7 +48,7 @@ from sklearn import model_selection
 from sklearn.preprocessing import MinMaxScaler
 
 """USER INPUTS"""
-file_dir = r'C:\Users\David\Worcester Polytechnic Institute (wpi.edu)\gr-TeixeiraLab - research-htl\Partition Coefficient Machine Learning\Paper Training Sets\new setv2.xlsx'
+file_dir = r'"INPUT FILE DIRECTORY"'
 sheetname = 'Sheet1'
 
 """Model Training Controls"""
