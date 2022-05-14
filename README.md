@@ -20,5 +20,4 @@ Important Notes:
 2. Before using any of these files, users will need to edit the file directories at the beginnging of the scripts. 
 
 For all questions please contact:
-Dr. Andrew Teixeira (arteixeira@wpi.edu)
-David Kenney (dhkenney@wpi.edu)
+Dr. Andrew Teixeira (arteixeira@wpi.edu) and David Kenney (dhkenney@wpi.edu)
