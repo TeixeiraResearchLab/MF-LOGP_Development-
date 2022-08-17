@@ -48,8 +48,8 @@ from sklearn import model_selection
 from sklearn.preprocessing import MinMaxScaler
 
 """USER INPUTS"""
-file_dir = r'C:\Users\David\Worcester Polytechnic Institute (wpi.edu)\gr-TeixeiraLab - research-htl\Partition Coefficient Machine Learning\Paper Training Sets\new setv2.xlsx'
-sheetname = 'Sheet1'
+file_dir = r'Enter File Path Here'
+sheetname = 'Enter Sheet Name Here'
 
 """Model Training Controls"""
 addtnl_features = 0 # 1 - YES, 0 - NO
@@ -171,6 +171,8 @@ if rmse_:
     model5_rmse = np.sqrt(mean_squared_error(y_test,scale_y.inverse_transform((model5.predict(nX_test)).reshape(-1,1))))
     model6_rmse = np.sqrt(mean_squared_error(y_test,scale_y.inverse_transform((model6.predict(nX_test)).reshape(-1,1))))
     rmse = np.array([model1_rmse,model2_rmse,model3_rmse,model4_rmse,model5_rmse,model6_rmse])
+    
+    print(rmse)
 
     plt.figure(1)
     plt.bar(['Linear','Ridge','Lasso','Random Forest','Gradient Boosted','KNN'],rmse)
@@ -186,6 +188,8 @@ if mae_:
     model6_mae = mean_absolute_error(y_test,scale_y.inverse_transform((model6.predict(nX_test)).reshape(-1,1)))
     mae = np.array([model1_mae,model2_mae,model3_mae,model4_mae,model5_mae,model6_mae])
     
+    print(mae)
+
     plt.figure(2)
     plt.bar(['Linear','Ridge','Lasso','Random Forest','Gradient Boosted','KNN'],mae)
     plt.xticks(rotation = 45,ha = 'right')
@@ -200,6 +204,8 @@ if r2_score_:
     model6_r2 = r2_score(y_test,scale_y.inverse_transform((model6.predict(nX_test)).reshape(-1,1)))
     r2 = np.array([model1_r2,model2_r2,model3_r2,model4_r2,model5_r2,model6_r2])
     
+    print(r2)    
+
     plt.figure(3)
     plt.bar(['Linear','Ridge','Lasso','Random Forest','Gradient Boosted','KNN'],r2)
     plt.xticks(rotation = 45,ha = 'right')
