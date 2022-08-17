@@ -6,12 +6,7 @@ NOTE: This script take a given group of molecular formulas and create a
       dataframe of elemental compositions for each elements. If this is the 
       first time using this script of the chemparse library run the following
       command in your command window:
-    
-      --> pip install chemparse
-      
-      For more information please read the latest documentation:
-      https://pypi.org/project/chemparse/
-      
+
       To use this script, users must have their data in an excel (.xlsx) file 
       format with all formulas in a single column with the header "Formula"
             
@@ -37,8 +32,8 @@ import chemparse as cp
 
 """User Inputs"""
 
-file_dir = r'"INPUT FILE DIRECTORY"'
-sheetname = 'Functional Groups'
+file_dir = r'Input File Path Here'
+sheetname = 'Input Sheet Name Here'
 
 #----------------------------------------------------------------------------#
 
@@ -55,7 +50,7 @@ full_data = full_data[(full_data['Exp logp']<30) &(full_data['C']>0) & (full_dat
 
 full_data = full_data[['Names','Formula','CAS No','SMILES','Exp logp', 'Reference','C','H','N','O','S','P','F','Cl','Br','I']]
 
-
+print(full_data)
 
 
 
