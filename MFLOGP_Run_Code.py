@@ -29,8 +29,8 @@ import chemparse as cp
 import sys
 
 """USER INPUTS"""
-single_compound = 0
-compound_list = 1
+single_compound = 1
+compound_list = 0
 
 molecular_formula = 'C20H40' #"""Single Compound Only"""#
 
