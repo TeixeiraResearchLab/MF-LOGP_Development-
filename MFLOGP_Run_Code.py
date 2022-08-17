@@ -35,8 +35,8 @@ compound_list = 1
 molecular_formula = 'C20H40' #"""Single Compound Only"""#
 
 #Only required if you are analyzing a list of compounds in an excel document#
-file_dir = r'C:\Users\David\OneDrive\Documents\MFLOGP Test.xlsx'  
-sheetname = 'Sheet1'
+file_dir = r'Input File Path Here'  
+sheetname = 'Input Sheet Name Here'
 
 #----------------------------------------------------------------------------#
 if (single_compound) | ((single_compound !=1) & (compound_list !=1)) | (single_compound & compound_list):
