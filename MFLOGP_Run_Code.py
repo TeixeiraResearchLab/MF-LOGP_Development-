@@ -29,13 +29,13 @@ import chemparse as cp
 import sys
 
 """USER INPUTS"""
-single_compound = 1
-compound_list = 0
+single_compound = 0
+compound_list = 1
 
 molecular_formula = 'C20H40' #"""Single Compound Only"""#
 
 #Only required if you are analyzing a list of compounds in an excel document#
-file_dir = r'C:\\DIR\file_name.xlsx'  
+file_dir = r'C:\Users\David\OneDrive\Documents\MFLOGP Test.xlsx'  
 sheetname = 'Sheet1'
 
 #----------------------------------------------------------------------------#
@@ -103,6 +103,11 @@ elif compound_list:
     
     if len(features.columns) > 10:
         sys.exit('Incompatible Formula')   
+    elif len(features.columns)<10:
+        elements = ['C','H','N','O','S','P','F','Cl','Br','I']
+        compound = pd.DataFrame(features, columns = elements)
+        compound = compound.fillna(0)
+        
     else:
         compound = features
 
@@ -126,7 +131,7 @@ if single_compound:
     print(compound_prediction)
 elif compound_list:
     predictions = compound_prediction
-    print('Please see "predictions" in variable explorer for model predictions')
+    print(predictions)
 
 
 
