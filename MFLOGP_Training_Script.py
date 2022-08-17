@@ -48,8 +48,8 @@ from sklearn import model_selection
 from sklearn.preprocessing import MinMaxScaler
 
 """USER INPUTS"""
-file_dir = r'Enter File Path Here'
-sheetname = 'Enter Sheet Name Here'
+file_dir = r'Input File Path Here'
+sheetname = 'Input Sheet Name Here'
 
 """Model Training Controls"""
 addtnl_features = 0 # 1 - YES, 0 - NO
