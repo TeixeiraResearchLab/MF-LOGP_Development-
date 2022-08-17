@@ -11,10 +11,11 @@ Within the repository you'll find:
 
   File:
   - MFLOGP Data Set.xlxs: Entire data set used to train/test/validate the MF-LOGP algorithm
-  - MFLOGP Run Code.py: Top level script to use the data set to train and test various model performances
-  - MFLOGP Formula Parser: Pyhton script that will allow users to parse new formulas with ease
-  - MFLOGP Hyperparameter Tuning Script: Users can use this script to tune hyperparameters for new models
-  - MFLOGP Run Code: Here users can test a single formula or list of compounds and eaily predict partition coefficients
+  - MFLOGP Multicompound List.xlsx: Example list of compounds that can be used with the multi-compound prediction capabilities of MF-LOGP
+  - MFLOGP_Run_Code.py: Top level script to use the data set to train and test various model performances
+  - MFLOGP_Formula_Parser: Pyhton script that will allow users to parse new formulas with ease
+  - MFLOGP_Hyperparameter Tuning Script: Users can use this script to tune hyperparameters for new models
+  - MFLOGP_Training_Script: Users can take their data and train de-featured models
 
   Variables:
   - MFLOGP.sav: Exported final version of the MF-LOGP algorithm
