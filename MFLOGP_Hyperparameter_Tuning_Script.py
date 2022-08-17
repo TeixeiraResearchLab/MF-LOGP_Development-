@@ -39,8 +39,8 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 
 #----------------------------------------------------------------------------#
 """User Inputs"""
-file_dir = r'"INPUT FILE DIRECTORY"'
-sheetname = 'Functional Groups'
+file_dir = r'Input File Path Here'
+sheetname = 'Input Sheet Name Here'
 
 addtnl_features = 0 # 1 - YES, 0 - NO
 
