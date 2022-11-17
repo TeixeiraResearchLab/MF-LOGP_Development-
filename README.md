@@ -10,7 +10,7 @@ Within the repository you'll find:
   - Running MFLOGP via Anaconda Terminal: Instructions that detail how to download Anaconda, MFLOGP code and data, and run via Spyder
 
   File:
-  - MFLOGP Data Set.xlxs: Entire data set used to train/test/validate the MF-LOGP algorithm
+  - Final MFLOGP Dataset.xlxs: Entire data set used to train/test/validate the MF-LOGP algorithm
   - MFLOGP Multicompound List.xlsx: Example list of compounds that can be used with the multi-compound prediction capabilities of MF-LOGP
   - MFLOGP_Run_Code.py: Top level script to use the data set to train and test various model performances
   - MFLOGP_Formula_Parser: Pyhton script that will allow users to parse new formulas with ease
